@@ -1,7 +1,7 @@
 {
-  "name": "wildlife-photography",
+  "name": "sharedTrip",
   "version": "1.0.0",
-  "description": "Get acquainted with the provided HTML and CSS and create an application for sharing posts of wildlife.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
@@ -9,14 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tihomirtx88/Wildlife-Photography.git"
+    "url": "git+https://github.com/tihomirtx88/SharedTripsBackEnd.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tihomirtx88/Wildlife-Photography/issues"
-  },
-  "homepage": "https://github.com/tihomirtx88/Wildlife-Photography#readme",
+  "homepage": "https://github.com/tihomirtx88/SharedTripsBackEnd",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "express": "^4.18.1",
