@@ -7,10 +7,6 @@
     "start": "nodemon index.js",
     "debug": "index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tihomirtx88/SharedTripsBackEnd.git"
-  },
   "author": "",
   "license": "ISC",
   "homepage": "https://github.com/tihomirtx88/SharedTripsBackEnd",
