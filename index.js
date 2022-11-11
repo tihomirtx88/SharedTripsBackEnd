@@ -17,5 +17,6 @@ async function start(){
 
     app.get(`/`, (req,res) => res.json({message: `REST service is operational`}));
 
-    app.listen(3030, ()=> console.log(`Server listen on port 3030`));
+    const PORT = process.env.PORT || 3030
+    app.listen(PORT, ()=> console.log(`Server listen on port 3030`));
 }
