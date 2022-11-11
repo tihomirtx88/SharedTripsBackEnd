@@ -23,6 +23,8 @@ module.exports = async(app) =>{
         });
 
     } catch (err) {
+
+        console.log(err);
         console.error(`Error connetion on database`);
         process.exit(1)
     }
