@@ -4,12 +4,13 @@ require(`../models/Trip`);
 
 const dababaseName = `sharedTrip`
 // const conetctionString = `mongodb://localhost:27017/${dababaseName}`
-const conetctionString = `mongodb+srv://bodil4o88:8812267960@cluster0.b8lw2kg.mongodb.net/${dababaseName}`
+// const conetctionString = `mongodb+srv://bodil4o88:8812267960@cluster0.b8lw2kg.mongodb.net/${dababaseName}`
+const railwayMongo = `mongodb://mongo:sFFbztm5zy7HmAkyoPLV@containers-us-west-22.railway.app:6464/${dababaseName}`
 
 module.exports = async(app) =>{
     try {
 
-        await mongoose.connect(conetctionString, {
+        await mongoose.connect(railwayMongo, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
     
