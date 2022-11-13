@@ -12,6 +12,7 @@
   "homepage": "https://github.com/tihomirtx88/SharedTripsBackEnd",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
