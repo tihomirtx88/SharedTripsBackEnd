@@ -15,7 +15,7 @@ async function start(){
     app.use(`/users`, usersController);
     app.use(`/data/join`, joinController);
 
-    app.get(`/`, (req,res) => res.json({message: `REST service is operational`}));
+    // app.get(`/`, (req,res) => res.json({message: `REST service is operational`}));
 
     const PORT = process.env.PORT || 3030
     app.listen(PORT, ()=> console.log(`Server listen on port 3030`));

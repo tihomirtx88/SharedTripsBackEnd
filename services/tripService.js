@@ -63,8 +63,6 @@ async function deleteTrip(tripId) {
     user.trips.pop(tripId);
     
     await user.save();
-    
-    
 }
 
 async function getTripsByUser(userId) {
@@ -84,7 +82,6 @@ async function joinTrip(tripId, userId) {
         throw new Error(`User is already part of the trip`);
     }
     
-
     trip.buddies.push(userId);
     trip.seats -= 1;
     await trip.save();

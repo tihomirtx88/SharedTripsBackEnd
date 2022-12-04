@@ -1,6 +1,6 @@
 const { createTrip, updateTrip, deleteTrip, joinTrip, getAllTrips, getTripById, getTripsByUser, getBuddiesFromTrip } = require("../services/tripService");
 const mapErrors = require("../util/mapers");
-const { isAuth, isGuest, isOwner } = require(`../middleware/guards`);
+const { isAuth, isOwner } = require(`../middleware/guards`);
 const preload = require("../middleware/preload");
 
 const router = require(`express`).Router();
@@ -39,8 +39,7 @@ router.get(`/profile`, isAuth(),  async(req, res) => {
 router.get(`/:id`, preload(), async(req, res) => {
     const id = req.params.id;
     const trip = await getTripById(id);
-   
-    
+      
     if (trip) {
         res.json(trip);
     }else{
