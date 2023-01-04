@@ -20,6 +20,7 @@ router.get(`/buddies/:id`, preload(), async(req, res) => {
 });
 
 router.get(`/profile`, isAuth(),  async(req, res) => {
+    
     const tripsByUser = await getTripsByUser(req.user._id);
     req.user.tripsCount = tripsByUser.length;
     req.user.trips = tripsByUser;
