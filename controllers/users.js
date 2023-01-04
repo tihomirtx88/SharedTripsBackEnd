@@ -6,7 +6,7 @@ const router = require(`express`).Router();
 
 router.post(`/register`,isGuest(), async(req, res) => {
     try {     
-        if (req.body.password.trim() == `` || req.body.email.trim() == ``) {
+        if (req.body.password.trim() === `` || req.body.email.trim() == ``) {
             throw new Error(`Email and password are required!!!`);
         } 
         const user = await register(req.body.email.trim().toLowerCase(), req.body.password.trim(), req.body.gender.trim().toLowerCase());

@@ -42,6 +42,7 @@ router.get(`/:id`, preload(), async(req, res) => {
       
     if (trip) {
         res.json(trip);
+        
     }else{
         res.status(404).json({ message: `Item ${id} not found` });
     }
