@@ -5,6 +5,7 @@ const jwt = require(`jsonwebtoken`);
 const JWT_SECRET = `mysupersecretwow`;
 const blacklist = [];
 
+
 async function register(email, password, gender) {
     const existing = await getUserByEmail(email);
 
