@@ -39,12 +39,12 @@ router.get(`/profile`, isAuth(),  async(req, res) => {
 router.get(`/:id`, preload(), async(req, res) => {
     const id = req.params.id;
     const trip = await getTripById(id);
-   
     
     if (trip) {
         res.json(trip);
     }else{
         res.status(404).json({ message: `Item ${id} not found` });
+       
     }
 });
 //done details
@@ -59,6 +59,7 @@ router.get(`/`, async (req, res) => {
     } else {
         const data = await getAllTrips();
         res.json(data);
+        
     }
 });
 //done catalog and profile
